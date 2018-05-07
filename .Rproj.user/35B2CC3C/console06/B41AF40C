@@ -1,0 +1,254 @@
+]0;~/GoogleDrive/Interview/adjust[?1034hPhils-MBP:adjust phil$ [KPhils-MBP:adjust phil$ bash
+/Users/phil/Dropbox/go/src/git.scoopanalytics.io/core
+]0;~/Dropbox/go/src/git.scoopanalytics.io/core[?1034hbash-3.2$ sudo -i R
+Password:
+Sorry, try again.
+Password:
+
+R version 3.2.2 (2015-08-14) -- "Fire Safety"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.5.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> packages.in[K[K[K[K[K[K[K[K[K[K[Kinstall.packages("ggplot2", dependencies=TRUE)
+[1mInstalling package into ‘/usr/local/lib/R/3.2/site-library’
+(as ‘lib’ is unspecified)
+[0m--- Please select a CRAN mirror for use in this session ---
+HTTPS CRAN mirror 
+
+ 1: 0-Cloud [https]                   2: Algeria [https]                
+ 3: Australia (Canberra) [https]      4: Australia (Melbourne 1) [https]
+ 5: Australia (Melbourne 2) [https]   6: Australia (Perth) [https]      
+ 7: Austria [https]                   8: Belgium (Ghent) [https]        
+ 9: Brazil (PR) [https]              10: Brazil (RJ) [https]            
+11: Brazil (SP 1) [https]            12: Brazil (SP 2) [https]          
+13: Bulgaria [https]                 14: Canada (MB) [https]            
+15: Chile 1 [https]                  16: Chile 2 [https]                
+17: China (Beijing) [https]          18: China (Hefei) [https]          
+19: China (Guangzhou) [https]        20: China (Lanzhou) [https]        
+21: China (Shanghai) [https]         22: Colombia (Cali) [https]        
+23: Czech Republic [https]           24: Denmark [https]                
+25: East Asia [https]                26: Ecuador (Cuenca) [https]       
+27: Ecuador (Quito) [https]          28: Estonia [https]                
+29: France (Lyon 1) [https]          30: France (Lyon 2) [https]        
+31: France (Marseille) [https]       32: France (Montpellier) [https]   
+33: France (Paris 2) [https]         34: Germany (Erlangen) [https]     
+35: Germany (Göttingen) [https]      36: Germany (Münster) [https]      
+37: Greece [https]                   38: Iceland [https]                
+39: India [https]                    40: Indonesia (Jakarta) [https]    
+41: Iran [https]                     42: Ireland [https]                
+43: Italy (Padua) [https]            44: Japan (Tokyo) [https]          
+45: Japan (Yonezawa) [https]         46: Korea (Ulsan) [https]          
+47: Malaysia [https]                 48: Mexico (Mexico City) [https]   
+49: New Zealand [https]              50: Norway [https]                 
+51: Philippines [https]              52: Serbia [https]                 
+53: Singapore (Singapore 1) [https]  54: Singapore (Singapore 2) [https]
+55: Spain (A Coruña) [https]         56: Spain (Madrid) [https]         
+57: Sweden [https]                   58: Switzerland [https]            
+59: Taiwan (Chungli) [https]         60: Turkey (Denizli) [https]       
+61: Turkey (Mersin) [https]          62: UK (Bristol) [https]           
+63: UK (Cambridge) [https]           64: UK (London 1) [https]          
+65: USA (CA 1) [https]               66: USA (IA) [https]               
+67: USA (IN) [https]                 68: USA (KS) [https]               
+69: USA (MI 1) [https]               70: USA (NY) [https]               
+71: USA (OH) [https]                 72: USA (OR) [https]               
+73: USA (TN) [https]                 74: USA (TX 1) [https]             
+75: Vietnam [https]                  76: (HTTP mirrors)                 
+
+
+Selection: 62
+[1malso installing the dependencies ‘stringi’, ‘stringr’, ‘htmlTable’, ‘viridis’, ‘evaluate’, ‘reshape2’, ‘Hmisc’, ‘knitr’, ‘rmarkdown’
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/stringi_1.2.2.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 7270627 bytes (6.9 MB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 6.9 MB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/stringr_1.3.0.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 118333 bytes (115 KB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 115 KB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/htmlTable_1.11.2.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 370185 bytes (361 KB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 361 KB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/viridis_0.5.1.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 1906320 bytes (1.8 MB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 1.8 MB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/evaluate_0.10.1.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 22177 bytes (21 KB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 21 KB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/reshape2_1.4.3.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 36405 bytes (35 KB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 35 KB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/Hmisc_4.1-1.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 711786 bytes (695 KB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 695 KB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/knitr_1.20.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 650082 bytes (634 KB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 634 KB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/rmarkdown_1.9.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 2096932 bytes (2.0 MB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 2.0 MB
+
+[0m[1mtrying URL 'https://www.stats.bris.ac.uk/R/src/contrib/ggplot2_2.2.1.tar.gz'
+[0m[1mContent type 'application/x-gzip'[0m[1m length 2213308 bytes (2.1 MB)
+[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m=[0m[1m
+[0m[1mdownloaded 2.1 MB
+
+[0mWarning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+* installing *source* package ‘stringi’ ...
+** package ‘stringi’ successfully unpacked and MD5 sums checked
+checking for R_HOME... /usr/local/Cellar/r/3.2.2_1/R.framework/Resources
+checking for R... /usr/local/Cellar/r/3.2.2_1/R.framework/Resources/bin/R
+checking for endianness... /usr/local/Cellar/r/3.2.2_1/R.framework/Resources/bin/R: line 193: /usr/local/Library/ENV/4.3/sed: No such file or directory
+ERROR: option '-e' requires a non-empty argument
+big
+checking for R >= 3.1.0 for C++11 use... /usr/local/Cellar/r/3.2.2_1/R.framework/Resources/bin/R: line 193: /usr/local/Library/ENV/4.3/sed: No such file or directory
+ERROR: option '-e' requires a non-empty argument
+no
+*** disabling C++11 use
+checking for R < 3.4.0 for CXX1X flag use... /usr/local/Cellar/r/3.2.2_1/R.framework/Resources/bin/R: line 193: /usr/local/Library/ENV/4.3/sed: No such file or directory
+ERROR: option '-e' requires a non-empty argument
+yes
+checking for local ICUDT_DIR... icu55/data
+checking for cat... /bin/cat
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking how to run the C preprocessor... clang++ -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking elf.h usability... no
+checking elf.h presence... no
+checking for elf.h... no
+checking whether we are using the GNU C++ compiler... yes
+checking whether clang++ accepts -g... yes
+checking whether the C++ compiler supports the long long type... yes
+checking whether the compiler implements namespaces... yes
+checking whether the compiler supports Standard Template Library... yes
+checking whether std::map is available... yes
+checking for pkg-config... /usr/local/bin/pkg-config
+checking with pkg-config for the system ICU4C... no
+*** pkg-config did not detect ICU4C-devel libraries installed
+*** Trying with "standard" fallback flags
+checking whether we may build an ICU4C-based project... no
+*** The available ICU4C cannot be used
+checking whether we may compile src/icu55/common/umapfile.c... yes
+checking whether we may compile src/icu55/common/putil.cpp... yes
+checking whether we can fetch icudt... /usr/local/Cellar/r/3.2.2_1/R.framework/Resources/bin/R: line 193: /usr/local/Library/ENV/4.3/sed: No such file or directory
+ERROR: option '-e' requires a non-empty argument
+*** icudt download failed. stopping.
+ERROR: configuration failed for package ‘stringi’
+* removing ‘/usr/local/lib/R/3.2/site-library/stringi’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependency ‘stringi’ is not available for package ‘stringr’
+* removing ‘/usr/local/lib/R/3.2/site-library/stringr’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependency ‘stringr’ is not available for package ‘evaluate’
+* removing ‘/usr/local/lib/R/3.2/site-library/evaluate’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependency ‘stringr’ is not available for package ‘reshape2’
+* removing ‘/usr/local/lib/R/3.2/site-library/reshape2’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependencies ‘evaluate’, ‘stringr’ are not available for package ‘knitr’
+* removing ‘/usr/local/lib/R/3.2/site-library/knitr’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependency ‘reshape2’ is not available for package ‘ggplot2’
+* removing ‘/usr/local/lib/R/3.2/site-library/ggplot2’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependencies ‘stringr’, ‘knitr’ are not available for package ‘htmlTable’
+* removing ‘/usr/local/lib/R/3.2/site-library/htmlTable’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependency ‘ggplot2’ is not available for package ‘viridis’
+* removing ‘/usr/local/lib/R/3.2/site-library/viridis’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependencies ‘knitr’, ‘evaluate’, ‘stringr’ are not available for package ‘rmarkdown’
+* removing ‘/usr/local/lib/R/3.2/site-library/rmarkdown’
+Warning in strptime(xx, f <- "%Y-%m-%d %H:%M:%OS", tz = tz) :
+  unknown timezone 'default/Europe/London'
+ERROR: dependencies ‘ggplot2’, ‘htmlTable’, ‘viridis’ are not available for package ‘Hmisc’
+* removing ‘/usr/local/lib/R/3.2/site-library/Hmisc’
+
+The downloaded source packages are in
+	‘/private/tmp/RtmpbvI7QV/downloaded_packages’
+[1mWarning messages:
+[0m[1m1: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘stringi’ had non-zero exit status
+[0m[1m2: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘stringr’ had non-zero exit status
+[0m[1m3: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘evaluate’ had non-zero exit status
+[0m[1m4: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘reshape2’ had non-zero exit status
+[0m[1m5: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘knitr’ had non-zero exit status
+[0m[1m6: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘ggplot2’ had non-zero exit status
+[0m[1m7: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘htmlTable’ had non-zero exit status
+[0m[1m8: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘viridis’ had non-zero exit status
+[0m[1m9: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘rmarkdown’ had non-zero exit status
+[0m[1m10: [0m[1mIn install.packages("ggplot2", dependencies = TRUE) :[0m[1m
+ [0m[1m installation of package ‘Hmisc’ had non-zero exit status
+[0m> 
+> 
+> [1m
+[0m> 
+Save workspace image? [y/n/c]: n
+[KPhils-MBP:adjust phil$ 

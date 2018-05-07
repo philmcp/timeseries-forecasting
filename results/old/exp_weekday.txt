@@ -1,0 +1,47 @@
+==================== "Computing linear..." ====================
+
+Call:
+tslm(formula = log_installs ~ day, data = df)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-0.30212 -0.06874 -0.00474  0.04027  0.57073
+
+Coefficients:
+             Estimate Std. Error  t value Pr(>|t|)
+(Intercept) 1.990e+01  1.444e-02 1377.901  < 2e-16 ***
+day         2.911e-04  6.885e-05    4.228 3.28e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1167 on 258 degrees of freedom
+Multiple R-squared:  0.0648,	Adjusted R-squared:  0.06117
+F-statistic: 17.88 on 1 and 258 DF,  p-value: 3.276e-05
+
+
+
+
+
+
+
+
+
+==================== "Computing non-linear..." ====================
+
+Call:
+tslm(formula = log_installs ~ I(day^2), data = df)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-0.28810 -0.06550 -0.01448  0.03635  0.56524
+
+Coefficients:
+             Estimate Std. Error  t value Pr(>|t|)
+(Intercept) 1.990e+01  1.050e-02 1895.612  < 2e-16 ***
+I(day^2)    1.070e-06  1.778e-07    6.018 6.03e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.113 on 258 degrees of freedom
+Multiple R-squared:  0.1231,	Adjusted R-squared:  0.1197
+F-statistic: 36.22 on 1 and 258 DF,  p-value: 6.033e-09

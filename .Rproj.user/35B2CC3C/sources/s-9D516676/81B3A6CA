@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1525278842878.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "81B3A6CA",
+    "lastKnownWriteTime" : 1525712821,
+    "last_content_update" : 1525712821985,
+    "path" : "~/GoogleDrive/Interview/adjust/r/data.r",
+    "project_path" : "r/data.r",
+    "properties" : {
+        "cursorPosition" : "42,135",
+        "scrollLine" : "13"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
