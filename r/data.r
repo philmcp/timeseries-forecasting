@@ -5,6 +5,11 @@ require("sqldf")
 require("RPostgreSQL")
 
 # Connect to db etc
+
+####################################################################################
+# Dont worry, I wouldn't include the password to the database in a production project ;)
+####################################################################################
+
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, dbname = "adjust",
                  host = "localhost", port = 5432,
